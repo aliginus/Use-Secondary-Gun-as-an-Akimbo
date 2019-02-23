@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<mod>
+     <hooks script_path="hooks/" hook_id="lib/">
+	 <group :script_path="tweakdata_post/">
+			<post :script_path="weapontweakdata.lua" :hook_id="tweak_data/akimboweaponbase"/>
+		</group>
+	</hooks>
+</mod>
