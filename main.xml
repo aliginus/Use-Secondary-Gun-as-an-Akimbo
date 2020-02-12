@@ -1,2 +1,17 @@
-<table name="Use Secondary Gun as an Akimbo Fixed" color="Color(0.6, 0.9, 0.1)">
-</table>
+<mod name="Secondary Gun as an Akimbo" author="YOUR_NAME" global_key="YourClassName" core_class="Core.lua" min_lib_ver="3.0">
+
+    <Hooks directory="Hooks">
+        <hook file="akimboweaponbase.lua" source_file="lib/units/weapons/akimboweaponbase"/>
+    </Hooks>
+    <Localization directory="Loc" default="english.txt">
+        <localization language="english" file="english.txt"/>
+    </Localization>
+
+    <Options auto_build_menu="true">
+        <options>
+            <!--Ingame the option menu background will be halved-->
+            <merge_data area_bg="half"/>
+            <option type="bool" default_value="true" name="ExampleOption"/>
+        </options>
+    </Options>
+</mod>
